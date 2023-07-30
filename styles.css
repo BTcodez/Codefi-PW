@@ -75,3 +75,13 @@ input {
     height: 1.7em;
     outline: none;
 }
+
+.mad-lib {
+    color: #EDF6F9;
+    width: 20em;
+    margin: 2em auto;
+}
+
+b {
+    color: #264653;
+}
