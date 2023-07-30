@@ -14,7 +14,7 @@ const madLibDisplay = document.querySelector(".mad-lib");
 const form = document.querySelector("form");
 
 // Variable for the mad lib story
-const story = `My friends and I started a secret club! We meet ever day by the <b>${adj1}</b> <b>${noun}</b>. Our club has some very special rules. If you want to join you have to wear a <b>${adj2}</b> <b>${cloth}</b> on your <b>${bdypt}</b>. You are not allowed to <b>${verb}</b> during meetings, and you can only eat <b>${food}</b> for your meals. If you are interested in joining, let me know!`;
+const story = `My friends and I started a secret club! We meet every day by the <b>${adj1}</b> <b>${noun}</b>. Our club has some very special rules. If you want to join you have to wear a <b>${adj2}</b> <b>${cloth}</b> on your <b>${bdypt}</b>. You are not allowed to <b>${verb}</b> during meetings, and you can only eat <b>${food}</b> for your meals. If you are interested in joining, let me know!`;
 
 form.addEventListener ("submit", function (event) {
     event.preventDefault();
