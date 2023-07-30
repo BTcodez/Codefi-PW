@@ -9,7 +9,6 @@
 
 main {
     display: flex;
-    flex: auto;
     min-height: 100vh;
     background: linear-gradient(to right bottom, #78290f, #ff7d00);
     justify-content: center;
@@ -46,17 +45,13 @@ p {
 form {
     width: 20em;
     margin: 2em auto;
-    text-align: center;
 
 }
 
 .form-group {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
-    gap: 10px;
+    justify-content: space-between;
+    font-size: large;
     margin-bottom: 1.5rem;
   
 }
@@ -68,10 +63,9 @@ form {
     border-radius: 2em;
     max-width: 80%;
     margin: 0 auto;
-    box-shadow: 10px 10px 30px (#83C5BE);
+    box-shadow: 0px 0px 10px teal;
     backdrop-filter: blur(4rem);
 
-   
 }
 
 .submit {
@@ -94,16 +88,14 @@ form {
 }
 
 input {
-    text-align: center;
     border-bottom: 2px solid #05232f; 
-    background-color: none;
     height: 1.5em;
     border-radius: 7px;
     transition: 0.4s ease;
-    width: 100%;
-    padding: 5px;
+
     border: 1px solid #05232f;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 input:focus {
