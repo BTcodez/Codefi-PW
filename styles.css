@@ -50,6 +50,7 @@ form {
 }
 
 .submit {
+    align-self: center;
     border: 0;
     background-color: #2A9D8F;
     color: #EDF6F9;
@@ -69,11 +70,17 @@ form {
 }
 
 input {
-    border: none;
+    border: 1px;
+    text-align: center;
     border-bottom: 2px solid #264653; 
     background-color: #EDF6F9;
-    height: 1.7em;
-    outline: none;
+    height: 1.5em;
+    border-radius: 1em;
+}
+
+input:focus {
+    transform: scale(1.2);
+    outline: #2A9D8F;
 }
 
 .mad-lib {

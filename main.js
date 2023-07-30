@@ -19,6 +19,35 @@ const story = `My friends and I started a secret club! We meet ever day by the <
 form.addEventListener ("submit", function (event) {
     event.preventDefault();
 
+    if(adj1.value == "") {
+        alert(`${adj1.name} cannot be blank`);
+        adj1.focus(); 
+}   else if (noun.value == "") {
+        alert(`${noun.name} cannot be blank`);
+        noun.focus(); 
+}   else if (adj2.value == "") {
+        alert(`${adj2.name} cannot be blank`);
+        adj2.focus(); 
+}   else if (cloth.value == "") {
+        alert(`${cloth.name} cannot be blank`);
+        cloth.focus(); 
+}   else if (bdypt.value == "") {
+        alert(`${bdypt.name} cannot be blank`);
+        bdypt.focus(); 
+}   else if (verb.value == "") {
+        alert(`${verb.name} cannot be blank`);
+        verb.focus(); 
+}   else if (food.value == "") {
+        alert(`${food.name} cannot be blank`);
+        food.focus(); 
+}       else {
+        madLibStoryDisplay();
+}
+
+});
+
+
+function madLibStoryDisplay () {
     madLibDisplay.innerHTML = story
         .replace(`${adj1}`, adj1.value)
         .replace(`${noun}`, noun.value)
@@ -27,5 +56,4 @@ form.addEventListener ("submit", function (event) {
         .replace(`${bdypt}`, bdypt.value)
         .replace(`${verb}`, verb.value)
         .replace(`${food}`, food.value);
-    
-});
+}
