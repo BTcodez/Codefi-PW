@@ -3,12 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="./styles.css">
     <title>BTcode Mad Libs</title>
 </head>
 <body>
-        <h1>
+        <h1 style="text-align: center;"> Mad Libs </h1>
+        <div class="container">
+            <h3 style="text-align: center;">Fill out the form below and select submit to see your Mad Lib!</h3>
+            <hr style="margin-top: 1em;">
+            <form>
+                <div class="form-group">
+                    <label for="adj1">An Adjective</label>
+                    <input type="text" id="adj1" name="adj1">
+                </div>
+                <div class="form-group">
+                    <label for="Noun">Noun</label>
+                    <input type="text" id="Noun" name="Noun">
+                </div>
+                <div class="form-group">
+                    <label for="adj2">Another Adjective</label>
+                    <input type="text" id="adj2" name="adj2">
+                </div>
+                <div class="form-group">
+                    <label for="Cloth">Type of Clothing</label>
+                    <input type="text" id="Cloth" name="Cloth">
+                </div>
+                <div class="form-group">
+                    <label for="bdypt">Body Part</label>
+                    <input type="text" id="bdypt" name="bdypt">
+                </div>
+                <div class="form-group">
+                    <label for="Verb">Verb</label>
+                    <input type="text" id="Verb" name="Verb">
+                </div>
+                <div class="form-group">
+                    <label for="food">Type of Food</label>
+                    <input type="text" id="food" name="food">
+                </div>
 
-        </h1>
-        <div clas="container"></div>
+                <button class="submit" id="submit">Submit</button>
+            </form>
+            <hr style="margin-top: 1em;">
+            <p class="mad-lib"></p>
+        </div>
+
+        <script src="./main.js"></script>
 </body>
-</html>git 
+</html>
